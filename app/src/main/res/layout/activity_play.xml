@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Play">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/gameCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:text="번째 판"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:text="점수 :"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/setting2"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_gravity="right"
+        android:src="@drawable/setting" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="컴퓨터"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/compImg"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/userImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/scissor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="가위"
+            android:textSize="30sp"
+            android:layout_margin="20dp" />
+        <Button
+            android:id="@+id/rock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="바위"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+        <Button
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="보"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/endGame"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="그만"
+        android:textSize="47dp"
+        android:layout_gravity="center"
+        android:fontStyle="italic"
+        >
+
+    </Button>
+</LinearLayout>
